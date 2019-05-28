@@ -1,0 +1,26 @@
+*{
+	font-family:Georgia,Garamond, "Times New Roman", serif;
+}
+
+h1{
+	color: rgba(100,200,60,0.99);	
+        font-size:2;
+	font-style:italic;
+	font-weight:bold
+}
+h2{
+	color: hsla(240,60%,70%,0.99);	
+        font-size:1.2;
+	font-style:italic;
+	font-weight:bold
+}
+strong {
+	color:#ffaa44	
+        font-size:1.2;
+	font-style:italic;
+	font-weight:bold
+}
+p,table, {
+	text-indent:15px;
+	background-color:rgba(0,100,100,.1);	
+}
