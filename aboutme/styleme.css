@@ -27,9 +27,9 @@ p,table {
 }
 a{
 	text-style:italic;
+	color:deeppink;
 }
-a:link{
-	
+a:link{	
 	text-decoration:none;
 }
 
@@ -37,5 +37,13 @@ a:hover{
 	text-decoration:underline;
 }
 p::first-letter{
-	text-size=1.5%;
+	font-size:150%;
+}
+
+li~ul { 
+        font-style:oblique;
+	color:#5599FF;
+}
+.moinfo {	
+        font-size:90%;
 }
