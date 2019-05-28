@@ -1,5 +1,9 @@
 *{
 	font-family:Georgia,Garamond, "Times New Roman", serif;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1;
 }
 
 h1{
