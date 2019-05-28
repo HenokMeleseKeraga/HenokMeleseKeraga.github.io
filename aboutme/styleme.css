@@ -15,12 +15,12 @@ h2{
 	font-weight:bold
 }
 strong {
-	color:#ffaa44	
+	color:#ffaa44;	
         font-size:1.2em;
 	font-style:italic;
 	font-weight:bold
 }
-p,table, {
+p,table {
 	text-indent:15px;
 	background-color:rgba(0,100,100,.1);	
 }
