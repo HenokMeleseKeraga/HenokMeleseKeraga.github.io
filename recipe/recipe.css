@@ -1,0 +1,38 @@
+body{
+	color:#404040;
+	background-color:#FFFFFF;
+	font-family:Georgia,Garamond,serif;
+	font-size: 11px;	
+}
+a{
+	color: #A4A400;
+}
+.heading {
+	color: #A4A400;
+	background-color: #F0F0F0;
+	font-family: Lucida Sans Unicode, Helvetica,Arial,sans-serif;
+	
+}
+h1{
+	text-align: center;
+	font-weight: bold;
+	font-size:22px;
+}
+h2{
+	text-align:left;
+	font-size: 18px;
+	
+}
+#micake{
+	text-decoration:line-through;
+}
+blockquote{
+	font-style: italic;
+	text-indent: 10px;
+	background-color: #FFFFA8;
+}
+footer{
+	font-family: monospace;
+	text-align: right;
+	
+}
