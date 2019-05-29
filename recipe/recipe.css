@@ -45,7 +45,8 @@ ul{
 footer ul{
 	list-style-type: none;
 	list-style-image:none;
-	font-family: monospace;
-	text-align:left;
+	font-family: monospace;	
+	float: left;
+	position:left;
 	
 }
