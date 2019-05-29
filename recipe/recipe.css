@@ -1,4 +1,5 @@
 body{
+	background-image: url(images/silverware.jpg);
 	color:#404040;
 	background-color:#FFFFFF;
 	font-family:Georgia,Garamond,serif;
@@ -31,8 +32,20 @@ blockquote{
 	text-indent: 10px;
 	background-color: #FFFFA8;
 }
-footer{
+ul{
+	list-style-image:url(images/pie_icon.gif);
+}
+.ulmodif{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image:none;
+	text-align:left;
+}
+footer ul{
+	list-style-type: none;
+	list-style-image:none;
 	font-family: monospace;
-	text-align: right;
+	text-align:left;
 	
 }
