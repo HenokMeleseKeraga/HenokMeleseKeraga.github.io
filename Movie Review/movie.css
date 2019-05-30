@@ -1,12 +1,12 @@
 body{
-	background-image: url("TMNT - Rancid Tomatoes_files/background.png");
+	background-image: url("TMNT-Rancid-Tomatoes_files/background.png");
 	font-size: 8px;
 	font-family: Verdana,Tahoma,sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
 .banner  {
-	background-image: url("TMNT - Rancid Tomatoes_files/bannerbg.png");
+	background-image: url("TMNT-Rancid-Tomatoes_files/bannerbg.png");
 	background-repeat: repeat-x;
 	text-align: center;
     margin-left: auto;
@@ -45,7 +45,7 @@ h1{
 	color: red;
 	margin-top: auto;
 	margin-bottom: auto;
-	background-image: url("TMNT - Rancid Tomatoes_files/rbg.png");
+	background-image: url("TMNT-Rancid-Tomatoes_files/rbg.png");
     background-repeat: repeat-x;
 }
 #rating img {
