@@ -15,10 +15,11 @@ body{
 }
 	
 h1{
-	font-size: 24px;
+	text-align: center;
+	font-size: 24pt;
 	font-weight: bold;
-	font-family: Tahoma,Verdana,sans-serif;
-	text-shadow: 3px 3px #999999
+	font-family: Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px #999999;
 }
 
 #main{
