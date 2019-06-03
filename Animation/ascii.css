@@ -1,0 +1,45 @@
+body{
+	border:2px solid red;
+	background-color: #CCCCFF;
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+header{
+	border: 2px solid red;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#txtbox {
+	border: 2px solid red;
+	text-align: center;
+}
+textarea{
+	width: 90%;
+	height: 400px;
+	font-family: monospace;
+	font-size:12pt;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+fieldset{
+	border: 5px solid black;
+	display: inline;
+	
+}
+#control{
+	border: 2px solid red;
+	text-align: center;
+}
+footer{
+	text-align: right;
+}
+footer p{
+	display: inline;
+}

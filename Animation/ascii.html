@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASCIImation</title>
+		<link href="ascii.css" rel="stylesheet" type="text/css"/>
+	</head>
+	
+	<body>
+		<header>
+			<h1>CS472:ASCII Animation Viewer</h1>
+		</header>
+		<div id="txtbox">
+		<textarea cols="80" rows="20" id="mytextarea"></textarea>
+		</div>
+		<div id="control">
+			<fieldset>
+				<legend>Play Controls:</legend> 
+				<button type="button" id="start" onclick="start();">Start</button>
+				<button type="button" id="stop" onclick="stop();">Stop</button>
+			</fieldset>
+			<fieldset>
+				<legend>Animation:</legend> 
+				<select id="animationId" onchange="animationtype();">
+					<option value="Blank">Blank</option>
+					<option value="Exercise">Exercise</option>
+					<option value="Juggler">Juggler</option>
+					<option value="Bike">Bike</option>
+					<option value="Dive">Dive</option>
+					<option value="Custom">Custom</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Size:</legend> 
+				<select id="txtsize" onchange="txtsize();">
+					<option value="7pt">Tiny</option>
+					<option value="10pt">Small</option>
+					<option selected value="12pt">Medium</option>
+					<option value="16pt">Large</option>
+					<option value="24pt">Extra Large</option>
+					<option value="32pt">XXL</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Speed:</legend> 
+				<label><input type="checkbox"  id="ckbox" value="250" onchange="speedch();" />Turbo</label>
+			</fieldset>			
+		</div>
+		<footer>
+			<p>
+			<a href="https://webster.cs.washington.edu/jslint/?referer">
+             <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+             </a>
+			</p>
+			<p>
+            <a href="https://validator.w3.org/check/referer">
+            <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="Validate" />
+            </a>
+          </p>
+	   <p>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer">
+         <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+          </p>
+		</footer>
+		<script src="animations.js"></script>
+		<script src="ascii.js"></script>
+	</body>
+</html>
