@@ -6,7 +6,7 @@ function display() {
 	     txtarea.style.fontWeight="bold";
 		 txtarea.style.color="green";
 		 txtarea.style.textDecoration="underline";
-		 document.body.style.backgroundImage="url('Text Decorator_files/hundred-dollar-bill.jpg')"
+		 document.body.style.backgroundImage="url('TextDecorator_files/hundred-dollar-bill.jpg')"
 	   }
 	   else{
 	    txtarea.style.fontWeight="normal";
