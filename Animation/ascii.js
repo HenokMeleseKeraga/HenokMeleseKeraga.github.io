@@ -35,7 +35,7 @@ function start(){
 	
 }
 function stop(){
-	alert("hello");
+	//alert("hello");
 	clearInterval(timerid);
 	document.getElementById("mytextarea").value=starttxt;
 	document.getElementById("stop").disabled = true;
@@ -44,7 +44,7 @@ function stop(){
 }
 
 function speedch(){
-	alert(document.getElementById("ckbox").value);
+	//alert(document.getElementById("ckbox").value);
 	if(document.getElementById("ckbox").value==50){
 		document.getElementById("ckbox").value=250;
 	}
