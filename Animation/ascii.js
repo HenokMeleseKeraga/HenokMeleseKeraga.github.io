@@ -6,8 +6,8 @@ let timerid;
 let delay=250;
 document.getElementById("stop").disabled = true;
 function txtsize(){	
-	let txtsize=document.getElementById("txtsize"); 
-	document.getElementById("mytextarea").style.fontSize=txtsize.value;
+ 
+	document.getElementById("mytextarea").style.fontSize=document.getElementById("txtsize").value;
 }
 
 function animationtype(){	

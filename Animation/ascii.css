@@ -1,12 +1,12 @@
 body{
-	border:2px solid red;
+	
 	background-color: #CCCCFF;
 	font-size: 14pt;
 	font-weight: bold;
 	font-family: sans-serif;
 }
 header{
-	border: 2px solid red;
+	
 	font-size: 32pt;
 	font-weight: bold;
 	text-align: center;
@@ -14,7 +14,7 @@ header{
 	padding: 0;
 }
 #txtbox {
-	border: 2px solid red;
+	
 	text-align: center;
 }
 textarea{
@@ -34,7 +34,7 @@ fieldset{
 	
 }
 #control{
-	border: 2px solid red;
+	
 	text-align: center;
 }
 footer{
