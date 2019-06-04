@@ -1,12 +1,12 @@
-"use strict";
 
+(function(){
+"use strict";
 let starttxt;
 let txtvaluearray;
 let timerid;
 let delay=250;
 document.getElementById("stop").disabled = true;
-function txtsize(){	
- 
+function txtsize(){	 
 	document.getElementById("mytextarea").style.fontSize=document.getElementById("txtsize").value;
 }
 
@@ -47,6 +47,7 @@ function speedch(){
 	//alert(document.getElementById("ckbox").value);
 	if(document.getElementById("ckbox").value==50){
 		document.getElementById("ckbox").value=250;
+		
 	}
 	
 	else{
@@ -54,7 +55,7 @@ function speedch(){
 	}
 }
 
-
+})();
 
 
 
