@@ -29,7 +29,7 @@ function auto() {
 	    let intfirstsize=parseInt(firstsize)+2;
 	    count=true;
 	    txtarea.style.fontSize=intfirstsize+"px";
-	    count++
+	   
 	    },500);
 	 
 	   }
