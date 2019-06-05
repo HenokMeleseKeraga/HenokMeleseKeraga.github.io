@@ -2,7 +2,7 @@
 
 var currentAnimation; // an array of frames, the first element should be displayed next.
 var interval; // an interval object.
-var speed = 250; // interval delay for the animation, initially set to normal.
+const speed = 250; // interval delay for the animation, initially set to normal.
 var size; // font size of the output, initially set to medium by the css file.
 
 window.onload = pageLoad;
