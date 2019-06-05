@@ -1,5 +1,5 @@
 
-(function(){
+
 "use strict";
 let starttxt;
 let txtvaluearray;
@@ -34,6 +34,9 @@ function start(){
 	},delay);
 	
 }
+
+
+
 function stop(){
 	//alert("hello");
 	clearInterval(timerid);
@@ -44,10 +47,11 @@ function stop(){
 }
 
 function speedch(){
-	//alert(document.getElementById("ckbox").value);
+	
 	if(document.getElementById("ckbox").value==50){
 		document.getElementById("ckbox").value=250;
 		
+
 	}
 	
 	else{
@@ -55,7 +59,7 @@ function speedch(){
 	}
 }
 
-})();
+
 
 
 
