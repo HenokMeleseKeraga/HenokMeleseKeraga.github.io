@@ -11,7 +11,7 @@
   );
 });
 function ajaxSuccess(data) {
-	$('#txtajax"').val(data);
+	$('#txtajax').val(data);
 }
 
 function ajaxFailure(xhr, status, exception) {
