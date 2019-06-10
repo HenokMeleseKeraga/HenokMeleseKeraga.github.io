@@ -1,5 +1,9 @@
-(function(){
+
+
+$(function(){
+    alert("hi");
     file='https://github.com/HenokMeleseKeraga/HenokMeleseKeraga.github.io/blob/master/AJAX/bring.html'+$('#ppp').val();
+    
   $.ajax(
       
       {      url: file,
