@@ -2,7 +2,7 @@
 
 $(function(){
     alert("hi");
-    file='https://github.com/HenokMeleseKeraga/HenokMeleseKeraga.github.io/blob/master/AJAX/bring.html'+$('#ppp').val();
+    file='https://henokmelesekeraga.github.io/';
     
   $.ajax(
       
