@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 @WebServlet("/support")
 public class CsTechSupport extends HttpServlet {
 
@@ -29,12 +30,13 @@ public class CsTechSupport extends HttpServlet {
         String name=req.getParameter("name");
         String email=req.getParameter("email");
         String cemail=getServletContext().getInitParameter("CEmail");
+       Long ticket= Math.round(Math.random() * ( 1000  ));
         PrintWriter out = resp.getWriter();
         out.print("<html><head><title>Test</title></head><body>");
         out.print("<p>Thank you! "+ name  +" us. We should receive reply from us with in 24 hrs in your email address " +
                 email+"</p>");
         out.print("<p>Let us know in our support email  "+ cemail  +" if you don’t receive reply within 24 hrs. Please be sure to attach your reference " +
-                email+" in your email </p>");
+                ticket+" in your email </p>");
         out.print("</body></html>");
     }
 }
