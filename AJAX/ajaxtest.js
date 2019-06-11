@@ -1,12 +1,10 @@
 
 
-$(function(){
-    alert("hi");
+$(function(){    
     file='https://henokmelesekeraga.github.io/';
     
-  $.ajax(
-      
-      {      url: file,
+  $.ajax(      
+      {     url: file,
 			type:'GET',
 			success: ajaxSuccess,
 			error: ajaxFailure
