@@ -11,18 +11,19 @@
     <title>Title</title>
 </head>
 <body>
-<%
-// if(session.getAttribute("user")==null){
-//     response.sendRedirect("login.jsp");
-// }
-%>
+
 <fieldset style="width: 600px; margin: auto;">
     <p>
         Welcome,
         <%=session.getAttribute("username")%>
         ! You have successfully logged in. Thank you. &nbsp; &nbsp;
-        <a href="<%=request.getContextPath()%>/Logout">Logout</a>
+
     </p>
+
+    <form action="logout" method="get">
+        <input type="submit" value="Logout">
+    </form>
+    <%if(session.getAttribute("msg")!=null){out.print(session.getAttribute("msg"));}%>
 
 </fieldset>
 </body>

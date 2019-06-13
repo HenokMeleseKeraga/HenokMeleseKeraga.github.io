@@ -38,6 +38,7 @@
                         value="1"<%= "1".equals(rememberVal) ? "checked": "" %>/> </br>
     <input type="submit"/>
 </form>
+    <%if(session.getAttribute("msg")!=null){out.print(session.getAttribute("msg"));}%>
 
 </fieldset>
 </body>

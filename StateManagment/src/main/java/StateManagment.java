@@ -5,12 +5,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = {"/", "/login"})
+@WebServlet(value = {"/", "/login"})
 public class StateManagment extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher dispatcher=req.getRequestDispatcher("login.jsp");
+        System.out.print("get method ");
         dispatcher.forward(req,resp);
     }
 
@@ -23,7 +24,7 @@ public class StateManagment extends HttpServlet {
 
 
         User user1=new User(username,password);
- //       if(Validate.userValidate(new db().getDb(),user1)){
+        if(Validate.userValidate(new db().getDb(),user1)){
 
         if (remember!= null){
             Cookie cUserName = new Cookie("cookuser", username);
@@ -44,20 +45,15 @@ public class StateManagment extends HttpServlet {
                 resp.addCookie(cRemember);
             }
         }
-        Cookie promo=new Cookie("value","$100");
-        promo.setMaxAge(60 * 60 * 24 * 30);
-        resp.addCookie(promo);
+
         HttpSession session=req.getSession();
         session.setAttribute("username" ,username);
-        RequestDispatcher dispatcher=req.getRequestDispatcher("welcome.jsp");
-        dispatcher.forward(req,resp);
-
-
-
-//        }
-//        else{
-//            resp.sendRedirect("login.jsp");
-//        }
+        req.getRequestDispatcher("welcome.jsp").forward(req,resp);
+        }
+       else{
+             req.getSession().setAttribute("msg","Invalide username or password");
+            resp.sendRedirect("login.jsp");
+        }
 
 
     }
