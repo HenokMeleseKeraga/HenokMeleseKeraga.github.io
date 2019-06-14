@@ -17,7 +17,7 @@ public class MyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-        HttpSession session=((HttpServletRequest)servletRequest).getSession();
+        HttpSession session=((HttpServletRequest)servletRequest).getSession(false);
 
         if(session!=null && session.getAttribute("username")!=null ){
 

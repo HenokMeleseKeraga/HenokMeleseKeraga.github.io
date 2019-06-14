@@ -10,9 +10,10 @@ public class StateManagment extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher=req.getRequestDispatcher("login.jsp");
-        System.out.print("get method ");
-        dispatcher.forward(req,resp);
+        //RequestDispatcher dispatcher=req.getRequestDispatcher("login.jsp");
+        //System.out.print("get method ");
+        //dispatcher.forward(req,resp);
+        resp.sendRedirect("login.jsp");
     }
 
     @Override
@@ -21,10 +22,16 @@ public class StateManagment extends HttpServlet {
         String username=req.getParameter("username");
         String password=req.getParameter("password");
         String remember =req.getParameter("remember");
-
+        // servlet context
+        String un=getServletContext().getInitParameter("uname");
+        String pw=getServletContext().getInitParameter("pword");
+        User sampleperson= new User(un,pw);
+        db dbnew= new db();
+        dbnew.add(sampleperson);
+        // ************
 
         User user1=new User(username,password);
-        if(Validate.userValidate(new db().getDb(),user1)){
+        if(Validate.userValidate(dbnew.getDb(),user1)){
 
         if (remember!= null){
             Cookie cUserName = new Cookie("cookuser", username);
@@ -46,7 +53,7 @@ public class StateManagment extends HttpServlet {
             }
         }
 
-        HttpSession session=req.getSession();
+        HttpSession session=req.getSession();// to tell the container  i want to create or use a session after this stm container take care of every thing
         session.setAttribute("username" ,username);
         req.getRequestDispatcher("welcome.jsp").forward(req,resp);
         }

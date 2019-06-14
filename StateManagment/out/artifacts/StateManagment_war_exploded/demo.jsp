@@ -24,6 +24,9 @@
 	<%=count1%><br/>
 	The count2 is now:
 	<%=count2%>
+	<%! int x=42;%>
+	<% int x=20;%>
+	<%=this.x%>
 
 	<%-- <%! int count3 = count1+count2; %> --%>
 	<!-- This is an html will be copied -->
