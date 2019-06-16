@@ -1,0 +1,93 @@
+body {
+    padding-top: 54px;
+
+}
+.left{
+    clear: right;
+    width:100%;
+    float:left;
+
+    text-align: left;
+}
+.right{
+    clear: left;
+    width:40%;
+    float:right;
+
+    text-align: right;
+}
+li{
+    display: inline;
+}
+
+img {
+    width: 40%;
+}
+
+footer {
+
+
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+div.carousel-item img{
+    height: 280px !important;
+    width: 100% !important;
+}
+
+div.card > a > img{
+    height: 170px !important;
+    width: 100% !important;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.product-image {
+    width: 100px;
+}
+
+div.row.shopping-cart {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+input.qty{
+    width: 70px;
+}
+
+.col-sm-5 {
+    text-align: right;
+    padding: 0;
+}
+.col-sm-5.left{
+    text-align: left;
+}
+.center_text {
+    text-align: center;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+
+}
