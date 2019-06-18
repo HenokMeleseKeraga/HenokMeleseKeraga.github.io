@@ -12,14 +12,13 @@
     <title>Fairfield Pizza</title>
     <!-- Custom styles for this template -->
     <link href="<c:url value="resources/css/style.css" />" rel="stylesheet">
+    <link rel="stylesheet" href="<c:url value="resources/css/bootstrap.css" />">
 
-<%--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">--%>
-<%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>--%>
-<%--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>--%>
+
 </head>
 <body>
 
-<div id="firstrow">
+<div id="firstrow" class="row">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top shadow-sm p-lg-1 mb-lg-3">
         <div class="left">
@@ -50,53 +49,41 @@
 
     </nav>
 
-</div> <!--firstrow end-->
 
-<!--second row -->
-<div id="secondrow">
-    <div class="left" role="listbox">
+<%--</div> <!--firstrow end-->--%>
+<%--<!--second row -->--%>
+<%--<div id="secondrow" class="row">--%>
+<%--    <div class="left" role="listbox">--%>
 
-        <div class="right">
+<%--        <div class="right">--%>
 
-            <h1 class="">Fairfield Pizza </h1>
+            <h1 class="title">Fairfield Pizza </h1>
 
-            <div class="list-group">
-                <div>
-                    <a href="/cart" class="">Home</a>
+<%--            <div class="list-group" class="left">--%>
+                <div class=""id="home">
+                    <a href="product-list" >Home</a>
                 </div>
-                <div>
-                    <a href="shopping-cart" class=""> View Order
+                <div class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <a href="shopping-cart" > View Order
                         <span>
-                        <i class="shopping-cart"></i>
+<%--                        <i class="shopping-cart"></i>--%>
                         <span id="num-of-items" class="badge badge-primary badge-pill">${numItems}</span>
                     </span>
                     </a>
                 </div>
 
 
-
-
-            </div>
-        </div>
-
-<%--        <div class="carousel-inner" role="listbox">--%>
-<%--            <div class="carousel-item active">--%>
-<%--                <img class="d-block img-fluid" src="<c:url value="resources/images/bnnr1.jpg" />" alt="First slide">--%>
 <%--            </div>--%>
-<%--            <div class="carousel-item">--%>
-<%--                <img class="d-block img-fluid" src="<c:url value="resources/images/bnnr2.jpg" />" alt="Second slide">--%>
-<%--            </div>--%>
-<%--            <div class="carousel-item">--%>
-<%--                <img class="d-block img-fluid" src="<c:url value="resources/images/bnnr3.jpg" />" alt="Third slide">--%>
-<%--            </div>--%>
-
-
 <%--        </div>--%>
 
 
-    </div>
+<%--    </div>--%>
 
 
 </div><!--secondrow end-->
 
-</body>
+
+
+
+<%--</body>--%>

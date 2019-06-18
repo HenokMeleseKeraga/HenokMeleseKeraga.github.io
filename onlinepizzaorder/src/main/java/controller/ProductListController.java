@@ -8,21 +8,22 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import dao.ProductDao;
 import model.Product;
 
 @WebServlet({"/product-list", ""})
 public class ProductListController extends HttpServlet {
 
-  private ProductDao productDao = new ProductDao();
-  @Override
-  protected void doGet(HttpServletRequest request, HttpServletResponse response)
-      throws ServletException, IOException {
+    private ProductDao productDao = new ProductDao();
 
-    List<Product> allProducts = productDao.getProduct();
-    request.setAttribute("products", allProducts);
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-    RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
-    requestDispatcher.forward(request, response);
-  }
+        List<Product> allProducts = productDao.getProduct();
+        request.setAttribute("products", allProducts);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+        requestDispatcher.forward(request, response);
+    }
 }

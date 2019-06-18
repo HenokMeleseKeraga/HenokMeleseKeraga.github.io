@@ -2,6 +2,7 @@ package controller;
 
 
 import dao.UserDao;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -20,30 +21,27 @@ public class RegisterController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String email = request.getParameter("email");
-        String pw = request.getParameter("password");;
+        String pw = request.getParameter("password");
         String fullname = request.getParameter("fullname");
         String telephone = request.getParameter("telephone");
         String address = request.getParameter("address");
-        UserDao db = (UserDao)getServletContext().getAttribute("db");
-
-        boolean success = db.addUser(email,pw,fullname,telephone,address);
+        UserDao db = (UserDao) getServletContext().getAttribute("db");
+        boolean success = db.addUser(email, pw, fullname, telephone, address);
 
         if (success) {
-//            Cookie cookie = new Cookie("cart-email", email);
-//            cookie.setMaxAge(3600);
-//            Cookie cookie2 = new Cookie("cart-pass", pw);
-//            cookie2.setMaxAge(3600);
-//            response.addCookie(cookie2);
-//            response.addCookie(cookie);
+            Cookie cookie = new Cookie("cart-email", email);
+            cookie.setMaxAge(3600);
+            Cookie cookie2 = new Cookie("cart-pass", pw);
+            cookie2.setMaxAge(3600);
+            response.addCookie(cookie2);
+            response.addCookie(cookie);
             request.getSession().setAttribute("email", email);
-
             response.sendRedirect("profile");
 
-        }
-        else{
+        } else {
 
-           request.setAttribute("error_login", "Email was be used before. Try different one.");
-          request.getRequestDispatcher("register.jsp").forward(request,response);
+            request.setAttribute("error_login", "Email was be used before. Try different one.");
+            request.getRequestDispatcher("register.jsp").forward(request, response);
         }
     }
 

@@ -7,13 +7,13 @@
     </div>
 </c:if>
 <div class="row">
-    <div class="col-lg-12" >
+    <div class="col-lg-12">
         <div class="row">
             <div class="col-lg-4 m-md-auto">
                 <span class="anchor"></span>
 
                 <div class="card rounded-0">
-                    <div class="card-header" >
+                    <div class="card-header">
                         Sign Up Form
                     </div>
                     <div class="card-body">
@@ -22,7 +22,7 @@
                                 <label for="email">Email</label>
                                 <input type="text" class="form-control form-control-lg rounded-0" name="email"
                                        id="email" placeholder="email address"
-                                        required>
+                                       required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
@@ -37,7 +37,7 @@
                             <div class="form-group">
                                 <label for="telephone">Telephone</label>
                                 <input type="text" class="form-control form-control-lg rounded-0" id="telephone"
-                                       name="telephone" placeholder="telephone" required >
+                                       name="telephone" placeholder="telephone" required>
                             </div>
                             <div class="form-group">
                                 <label for="address">Address</label>
@@ -45,7 +45,7 @@
                                        name="address" placeholder="address" required>
                             </div>
                             <div class="form-group">
-                                <input type="submit" class="btn form-control btn-success btn-lg" value="Sign Up" >
+                                <input type="submit" class="btn form-control btn-success btn-lg" value="Sign Up">
                             </div>
                             <hr/>
                         </form>
